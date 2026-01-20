@@ -11,15 +11,15 @@ export function SummaryCards({ totalSpending, thisMonthTotal, expenseCount }: Su
   const cards = [
     {
       title: 'Total Spending',
-      value: `$${totalSpending.toFixed(2)}`,
+      value: `₹${totalSpending.toFixed(2)}`,
       icon: DollarSign,
       description: 'All time',
     },
     {
       title: 'This Month',
-      value: `$${thisMonthTotal.toFixed(2)}`,
+      value: `₹${thisMonthTotal.toFixed(2)}`,
       icon: CalendarDays,
-      description: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+      description: new Date().toLocaleDateString('en-IN', { month: 'long', year: 'numeric' }),
     },
     {
       title: 'Total Expenses',
