@@ -45,7 +45,7 @@ export function SpendingChart({ data }: SpendingChartProps) {
             <BarChart data={data} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <XAxis 
                 type="number" 
-                tickFormatter={(value) => `$${value}`}
+                tickFormatter={(value) => `₹${value}`}
                 axisLine={false}
                 tickLine={false}
                 className="text-muted-foreground"
@@ -59,7 +59,7 @@ export function SpendingChart({ data }: SpendingChartProps) {
                 className="text-muted-foreground"
               />
               <Tooltip
-                formatter={(value: number) => [`$${value.toFixed(2)}`, 'Amount']}
+                formatter={(value: number) => [`₹${value.toFixed(2)}`, 'Amount']}
                 contentStyle={{
                   backgroundColor: 'hsl(var(--card))',
                   border: '1px solid hsl(var(--border))',

@@ -50,7 +50,7 @@ export function ExpenseList({ expenses, onDelete }: ExpenseListProps) {
               </div>
               <div className="flex items-center gap-3">
                 <span className="font-semibold text-lg">
-                  ${expense.amount.toFixed(2)}
+                  ₹{expense.amount.toFixed(2)}
                 </span>
                 <Button
                   variant="ghost"
